@@ -1,0 +1,60 @@
+{
+  "appTitle": "Discord Role Quiz",
+  "header": {
+    "exit": {
+      "label": "Exit Quiz",
+      "message": "Are you sure you want to exit the quiz? All the data stored will be lost after exiting.",
+      "no": "no",
+      "yes": "yes"
+    },
+    "mode": {
+      "dark": "Dark Mode",
+      "light": "Light Mode"
+    }
+  },
+  "form": {
+    "name": {
+      "title": "Name",
+      "required": "Name is required",
+      "tooShort": "Name is too short",
+      "tooLong": "Name is too long"
+    },
+    "email": {
+      "title": "Email",
+      "required": "Email is required",
+      "tooShort": "Email is too short",
+      "tooLong": "Email is too long",
+      "invalid": "Email is invalid"
+    },
+    "enter": "Enter",
+    "cookieText": "This website uses cookies, which is necessary for its functioning and required to achieve the purposes illustrated in the cookies policy. Upon entering the quiz you agree to accept the use of cookies."
+  },
+  "quiz": {
+    "welcome": {
+      "title": "Welcome,",
+      "message": "You are about to start the quiz. Click the start button below whenever you are ready.",
+      "exit": "Exit",
+      "enter": "start"
+    },
+    "question": {
+      "back": "Back",
+      "next": "Next"
+    },
+    "result": {
+      "passed": {
+        "title": "You are a trading expert!",
+        "message": "You have got the best answers! Based on your answers, our system detected that you are a veteran LATF member!"
+      },
+      "failed": {
+        "title": "Not quite there yet.",
+        "message": "You still need much more work to do! Based on your answers, our system detected that you are not a veteran LATF member just yet!"
+      },
+      "restart": "restart"
+    }
+  },
+  "common": {
+    "error": "Error",
+    "no": "No",
+    "yes": "Yes"
+  }
+}
