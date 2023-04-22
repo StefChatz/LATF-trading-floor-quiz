@@ -9,4 +9,6 @@ export const theme = extendTheme({
   fonts,
   letterSpacings,
   components,
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
 });
