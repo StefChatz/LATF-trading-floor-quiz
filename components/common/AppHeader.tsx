@@ -2,7 +2,7 @@ import { MoonIcon, SmallCloseIcon, SunIcon } from '@chakra-ui/icons';
 import { HStack, IconButton, Tooltip, useColorMode } from '@chakra-ui/react';
 import { deleteCookie } from 'cookies-next';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { COOKIE_KEY } from '../../constants';
 import { useTranslations } from '../../hooks';
 import { useAlert } from '../../providers';
@@ -15,7 +15,7 @@ interface Props {
 const AppHeader = (props: Props) => {
   const { isQuizPage } = props;
   const t = useTranslations();
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { setColorMode } = useColorMode();
   const router = useRouter();
   const { alert } = useAlert();
 
@@ -30,6 +30,10 @@ const AppHeader = (props: Props) => {
       },
     });
   };
+
+  useEffect(() => {
+    setColorMode('dark');
+  }, []);
 
   return (
     <HStack
