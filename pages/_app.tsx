@@ -6,6 +6,7 @@ import { theme } from "../theme";
 import { AlertProvider } from "../providers";
 import Head from "next/head";
 import { useTranslations } from "../hooks";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }: AppProps) {
   const t = useTranslations();
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         </Head>
         <Component {...pageProps} />
       </AlertProvider>
+      <Analytics />
     </ChakraProvider>
   );
 }
